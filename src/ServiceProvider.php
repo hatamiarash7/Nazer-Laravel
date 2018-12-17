@@ -21,6 +21,14 @@ class ServiceProvider extends Provider
 	public function boot()
 	{
 		AliasLoader::getInstance()->alias('Exceptions', Exceptions::class);
+
+		$configPath = __DIR__ . '/../config/nazer.php';
+		if (function_exists('config_path')) {
+			$publishPath = config_path('nazer.php');
+		} else {
+			$publishPath = base_path('config/nazer.php');
+		}
+		$this->publishes([$configPath => $publishPath], 'config');
 	}
 
 	/**
