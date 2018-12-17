@@ -17,7 +17,12 @@ class Connector
 				'http://n.arash-hatami.ir/api/laravel/exception',
 				[
 					'json' => [
-						'body' => $e->getMessage()
+						'api' => config('NAZER_API'),
+						'message' => $e->getMessage(),
+						'line' => $e->getLine(),
+						'trace' => $e->getTraceAsString(),
+						'file' => $e->getFile(),
+						'previous' => $e->getPrevious()
 					]
 				]);
 		} catch (GuzzleException $ignore) {
