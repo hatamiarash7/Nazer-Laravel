@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hatamiarash7
- * Date: 2018-12-17
- * Time: 21:33
- */
 
 namespace Hatamiarash7\Nazer;
 
@@ -45,6 +39,9 @@ class Decorator implements ExceptionHandler
 	 */
 	public function report(Exception $e)
 	{
+		$connector = new Connector();
+		$connector->sendException($e);
+
 		foreach ($this->handlers->getReportersFor($e) as $reporter) {
 			if ($report = $reporter($e)) {
 				return $report;
