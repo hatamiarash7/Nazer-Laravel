@@ -12,7 +12,7 @@ class Connector
 	{
 		try {
 			$client = new Client();
-			$client->requestAsync(
+			$client->request(
 				'POST',
 				'http://n.arash-hatami.ir/api/laravel/exception',
 				[
