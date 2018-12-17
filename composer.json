@@ -1,0 +1,38 @@
+{
+  "name": "hatamiarash7/nazer",
+  "description": "Laravel Library for Nazer",
+  "type": "library",
+  "license": "GPL-3.0",
+  "keywords": [
+    "nazer",
+    "exceptions"
+  ],
+  "homepage": "https://github.com/hatamiarash7/Nazer-Laravel",
+  "authors": [
+    {
+      "name": "hatamiarash7",
+      "email": "hatamiarash7@gmail.com",
+      "homepage": "http://arash-hatami.ir",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^5.5|^7.0",
+    "illuminate/support": "^5.2",
+    "illuminate/contracts": "^5.2",
+    "laravel-zero/foundation": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hatamiarash7\\Nazer\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hatamiarash7\\Nazer\\ServiceProvider"
+      ]
+    }
+  }
+}
