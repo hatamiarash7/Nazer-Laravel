@@ -17,7 +17,7 @@ class Connector
 				'http://n.arash-hatami.ir/api/laravel/exception',
 				[
 					'json' => [
-						'api' => config('NAZER_API'),
+						'api' => config('nazer.api-key'),
 						'message' => $e->getMessage(),
 						'line' => $e->getLine(),
 						'trace' => $e->getTraceAsString(),
