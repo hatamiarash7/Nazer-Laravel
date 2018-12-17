@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hatamiarash7
- * Date: 2018-12-17
- * Time: 21:34
- */
 
 namespace Hatamiarash7\Nazer;
 
