@@ -22,7 +22,8 @@
     "illuminate/support": "^5.2",
     "illuminate/contracts": "^5.2",
     "laravel-zero/foundation": "^5.7",
-    "guzzlehttp/guzzle": "^6.3"
+    "guzzlehttp/guzzle": "^6.3",
+    "piwik/device-detector": "~3.0"
   },
   "autoload": {
     "psr-4": {
