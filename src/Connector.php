@@ -35,7 +35,6 @@ class Connector
 				$this->browser = $this->parseUserAgent($device->getUserAgent());
 			}
 
-
 			$client = new Client();
 			$client->request(
 				'POST',
