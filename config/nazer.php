@@ -11,6 +11,17 @@ return array(
 	|
 	*/
 
-	'api-key' => env('NAZER_API')
+	'api-key' => env('NAZER_API'),
+
+	/*
+	|--------------------------------------------------------------------------
+	| Application
+	|--------------------------------------------------------------------------
+	|
+	| Set your APP ID from Nazer's Admin Panel
+	|
+	*/
+
+	'app-id' => env('NAZER_APP_ID')
 
 );
