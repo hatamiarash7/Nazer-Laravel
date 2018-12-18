@@ -23,13 +23,18 @@ class Connector
 			$device->discardBotInformation();
 			$device->parse();
 
+			$mobile_detect = new Mobile_Detect();
+
 			if ($device->isBot()) {
 				$this->device = "bot";
 			} else {
+				if ($mobile_detect->isMobile()) $this->device = "mobile";
+				elseif ($mobile_detect->isTablet()) $this->device = "tablet";
+				else $this->device = "desktop";
 				$this->os = $device->getOs();
 				$this->browser = $this->parseUserAgent($device->getUserAgent());
-				$this->device = $device->getDevice();
 			}
+
 
 			$client = new Client();
 			$client->request(
