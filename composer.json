@@ -21,7 +21,7 @@
     "php": "^5.5|^7.0",
     "illuminate/support": "^5.2",
     "illuminate/contracts": "^5.2",
-    "laravel-zero/foundation": "^5.7",
+    "laravel-zero/foundation": "^10.0",
     "guzzlehttp/guzzle": "^6.3",
     "piwik/device-detector": "~3.0"
   },
