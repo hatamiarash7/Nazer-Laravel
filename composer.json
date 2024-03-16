@@ -18,7 +18,7 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "^5.5|^7.0",
+    "php": "8.3.4",
     "illuminate/support": "^5.2",
     "illuminate/contracts": "^5.2",
     "laravel-zero/foundation": "^5.7",
